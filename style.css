@@ -1,55 +1,285 @@
-.dropdown{
-    position: relative;
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+font-family:'Poppins',sans-serif;
+
 }
+
+
+header{
+
+background:#06142f;
+
+padding:20px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+position:fixed;
+
+width:100%;
+
+z-index:1000;
+
+}
+
+
+.logo{
+
+color:#29b6ff;
+
+font-size:40px;
+
+font-weight:bold;
+
+}
+
+
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+gap:35px;
+
+align-items:center;
+
+}
+
+
+nav ul li{
+
+position:relative;
+
+}
+
+
+nav ul li a{
+
+text-decoration:none;
+
+color:white;
+
+font-size:18px;
+
+}
+
+
+nav ul li a:hover{
+
+color:#29b6ff;
+
+}
+
+
+/* Dropdown */
 
 .dropdown-content{
-    display: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
 
-    background: white;
+display:none;
 
-    min-width: 180px;
+position:absolute;
 
-    border-radius: 10px;
+top:35px;
 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+left:0;
 
-    overflow: hidden;
+background:white;
 
-    z-index: 1000;
+min-width:180px;
+
+border-radius:10px;
+
+overflow:hidden;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
 }
+
 
 .dropdown-content li{
-    list-style: none;
+
+list-style:none;
+
 }
+
 
 .dropdown-content li a{
 
-    display: block;
+display:block;
 
-    padding: 12px 15px;
+padding:12px;
 
-    color: #000;
-
-    text-decoration: none;
+color:black;
 
 }
+
 
 .dropdown-content li a:hover{
 
-    background:#2563eb;
+background:#29b6ff;
 
-    color:white;
+color:white;
 
 }
 
-/* Hover panna mattum show aagum */
 
 .dropdown:hover .dropdown-content{
 
-    display:block;
+display:block;
 
 }
+
+
+/* Hero */
+
+.hero{
+
+height:100vh;
+
+background:
+
+linear-gradient(rgba(0,0,0,0.6),
+
+rgba(0,0,0,0.6)),
+
+url("https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+.hero h1{
+
+font-size:70px;
+
+margin-bottom:20px;
+
+}
+
+
+.hero p{
+
+font-size:22px;
+
+margin-bottom:30px;
+
+}
+
+
+.btn{
+
+background:white;
+
+color:#2563eb;
+
+padding:15px 40px;
+
+text-decoration:none;
+
+border-radius:30px;
+
+font-weight:bold;
+
+transition:0.3s;
+
+}
+
+
+.btn:hover{
+
+background:#2563eb;
+
+color:white;
+
+}
+
+
+/* Features */
+
+.features{
+
+padding:80px 8%;
+
+text-align:center;
+
+}
+
+
+.features h2{
+
+font-size:40px;
+
+margin-bottom:40px;
+
+}
+
+
+.feature-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+}
+
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+transition:0.3s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+footer{
+
+background:#06142f;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
 }
