@@ -1,13 +1,21 @@
 function validateForm() {
 
-    let name = document.forms["contactForm"]["name"].value;
-    let email = document.forms["contactForm"]["email"].value;
+let name =
+document.forms["contactForm"]["name"].value;
 
-    if (name == "" || email == "") {
-        alert("Name and Email must be filled out!");
-        return false;
-    }
+let email =
+document.forms["contactForm"]["email"].value;
 
-    alert("Form submitted successfully!");
-    return true;
+if(name=="" || email==""){
+
+alert("Name and Email must be filled out!");
+
+return false;
+
+}
+
+alert("Form Submitted Successfully!");
+
+return true;
+
 }
