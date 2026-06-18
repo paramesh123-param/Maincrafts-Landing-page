@@ -1,57 +1,47 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
-    <title>Contact</title>
-
+    <title>Contact - MainCrafts</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-<nav>
+<header>
+    <div class="logo">MainCrafts</div>
 
-    <a href="index.html">Home</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <a href="about.html">About</a>
+<section class="features">
+    <h2>Contact Us</h2>
 
-    <a href="contact.html">Contact</a>
+    <form name="contactForm" onsubmit="return validateForm()"
+          style="max-width:500px;margin:auto;display:flex;flex-direction:column;gap:15px;">
 
-</nav>
+        <input type="text" name="name" placeholder="Enter your name" style="padding:12px;">
 
-<section class="contact">
+        <input type="email" name="email" placeholder="Enter your email" style="padding:12px;">
 
-    <h1>Contact Us</h1>
+        <textarea name="message" placeholder="Enter your message" rows="5" style="padding:12px;"></textarea>
 
-    <form name="contactForm" onsubmit="return validateForm()">
-
-        <input type="text"
-        name="name"
-        placeholder="Enter your name">
-
-        <input type="email"
-        name="email"
-        placeholder="Enter your email">
-
-        <textarea
-        name="message"
-        placeholder="Enter message"></textarea>
-
-        <button type="submit">
-
-            Send
-
+        <button type="submit" class="btn">
+            Send Message
         </button>
 
     </form>
-
 </section>
+
+<footer>
+    <p>© 2025 MainCrafts Technology</p>
+</footer>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
