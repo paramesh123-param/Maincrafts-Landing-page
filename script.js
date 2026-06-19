@@ -1,13 +1,21 @@
-function validateForm() {
+function validateForm(){
 
-    let name = document.forms["contactForm"]["name"].value;
-    let email = document.forms["contactForm"]["email"].value;
+let name=document.getElementById("name").value;
 
-    if (name === "" || email === "") {
-        alert("Name and Email must be filled out!");
-        return false;
-    }
+let email=document.getElementById("email").value;
 
-    alert("Form Submitted Successfully!");
-    return true;
+let message=document.getElementById("message").value;
+
+if(name=="" || email=="" || message==""){
+
+alert("Please fill all fields");
+
+return false;
+
+}
+
+alert("Message Sent Successfully!");
+
+return true;
+
 }
