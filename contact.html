@@ -1,73 +1,113 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Contact</title>
+<title>Contact | MainCrafts</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
 <body>
 
-<nav>
+<header>
 
-<div class="logo">
+<nav class="navbar">
 
-MainCrafts
+<div class="logo">MainCrafts</div>
 
-</div>
-
-<ul>
+<ul class="nav-links">
 
 <li><a href="index.html">Home</a></li>
 
+<li class="dropdown">
+
+<a href="#">Services <i class="fa fa-angle-down"></i></a>
+
+<ul class="dropdown-content">
+
+<li><a href="#">Web Design</a></li>
+
+<li><a href="#">SEO</a></li>
+
+<li><a href="#">App Development</a></li>
+
+</ul>
+
+</li>
+
 <li><a href="about.html">About</a></li>
 
-<li><a href="contact.html">Contact</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+
+<li><a href="submissions.html">Submissions</a></li>
 
 </ul>
 
 </nav>
 
+</header>
 
-<div class="contact">
+<section class="contact-section">
 
-<h2>
+<div class="contact-box">
 
-Contact Us
+<h2>Contact Us</h2>
 
-</h2>
+<p>We'd love to hear from you. Fill out the form below.</p>
 
+<form id="contactForm">
 
-<form onsubmit="return validateForm()">
+<input
+type="text"
+id="name"
+placeholder="Enter Your Name"
+required>
 
-<input type="text" id="name" placeholder="Enter your name">
+<input
+type="email"
+id="email"
+placeholder="Enter Your Email"
+required>
 
-<input type="email" id="email" placeholder="Enter your email">
+<textarea
+id="message"
+placeholder="Enter Your Message"
+required></textarea>
 
-<textarea id="message" placeholder="Enter your message"></textarea>
-
-<button type="submit">Send Message</button>
+<button type="submit">
+Send Message
+</button>
 
 </form>
+
 </div>
 
+</section>
 
 <footer>
 
-© 2025 MainCrafts Technology
+<p>© 2026 MainCrafts. All Rights Reserved.</p>
+
+<div class="footer-links">
+
+<a href="#">Privacy Policy</a>
+
+<a href="#">Terms & Conditions</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
 
 </footer>
-
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
